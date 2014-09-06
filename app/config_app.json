@@ -1,0 +1,10 @@
+{
+	"paths": {
+		"src": {
+			"js": "public/src/javascript/"
+		},
+		"build": {
+			"js": "public/build/javascript/"
+		}
+	}
+}
