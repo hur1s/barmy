@@ -1,1 +1,10 @@
 app/node_modules
+*.svn-base
+
+app/public/resources/recipe-images/.svn/format
+
+app/public/resources/recipe-images/.svn/entries
+
+app/public/resources/recipe-images/.svn/all-wcprops
+
+*.map
