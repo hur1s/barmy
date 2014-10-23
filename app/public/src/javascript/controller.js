@@ -1,6 +1,6 @@
 var appController = angular.module('appController', []);
 
-appController.controller("FolioListController", ['dbDataService', '$scope',
+appController.controller("RecipeListController", ['dbDataService', '$scope',
     function(dbDataService, $scope) {
 		dbDataService.getRecipes().then(function(response) {
 			$scope.recipes = response.recipes;
@@ -10,7 +10,7 @@ appController.controller("FolioListController", ['dbDataService', '$scope',
     }
 ]);
 
-appController.controller('FolioItemController', ['dbDataService', '$scope', '$routeParams',
+appController.controller('RecipeItemController', ['dbDataService', '$scope', '$routeParams',
 	function(dbDataService, $scope, $routeParams) {
         $scope.id = $routeParams.itemId;
         dbDataService.getRecipe($routeParams.itemId).then(function(response) {

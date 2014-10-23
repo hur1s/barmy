@@ -17,11 +17,11 @@ var app = angular.module("app", ["ngRoute", "appController"]).service("dbDataSer
 app.config(["$routeProvider",
     function(a) {
         a.when("/", {
-            templateUrl: "templates/folio.html",
-            controller: "FolioListController"
+            templateUrl: "templates/recipes.html",
+            controller: "RecipeListController"
         }).when("/:itemId", {
             templateUrl: "templates/item.html",
-            controller: "FolioItemController"
+            controller: "RecipeItemController"
         })
     }
 ]);

@@ -25,9 +25,9 @@ var port = process.env.PORT || 8080; 		// set our port
 // =============================================================================
 var router = express.Router(); 				// get an instance of the express Router
 
-// test route to make sure everything is working (accessed at GET http://localhost:8080/api)
+// test route to make sure everything is working (accessed at GET http://localhost:8080/)
 router.get('/', function(request, response) {
-	response.json({ message: 'welcome to our barmano api!' });	
+	response.json({ message: 'welcome to our bar api!' });	
 });
 
 // more routes for our API will happen here
