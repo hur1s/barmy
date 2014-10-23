@@ -1,0 +1,24 @@
+		<div id="Responsive">
+			<div id="menu"></div>
+			<div id="content">
+				<div>
+					<form class="form-inline">
+						<div class="form-group">
+			            	<input class="form-control" ng-model="query.type" placeholder="Search">
+			        	</div>
+			        	<div class="form-group">
+			            	<label>Sort by</label>
+							<select class="form-control" ng-model="orderProp">
+								<option value="recipeName">Alphabetical</option>
+								<option value="-recipeId">Newest</option>
+							</select>
+						</div>
+					</form>
+				</div>
+			  	<div class="row">
+		  			<div class="col-md-3" ng-repeat="data in recipes | orderBy: orderProp">
+	                    <a href="#/{{data.recipeId}}">{{data.recipeName}}</a>
+	                </div>
+			  	</div>
+		  </div>
+		</div>
