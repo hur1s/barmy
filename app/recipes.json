@@ -1,0 +1,28 @@
+{  
+   "recipes":[  
+      {  
+         "recipeId":"1",
+         "recipeName":"Test recipe",
+         "recipeNameForLink":"test+recipe",
+         "instructions":"Test instructions",
+         "recipeHistory":null,
+         "alcoholLevel":"30.13"
+      },
+      {  
+         "recipeId":"2",
+         "recipeName":"White Russian",
+         "recipeNameForLink":"white+russian",
+         "instructions":"Pour Kahl\u00faa and vodka directly into old fashioned glass filled with ice. Float fresh cream on the top and stir in slowly.",
+         "recipeHistory":"The drink is not traditionally Russian, but is so named due to Russian vodka being the primary ingredient. The \"White Russians\" were an anti-Bolshevik group from the Russian Civil War.",
+         "alcoholLevel":"25.3"
+      },
+      {  
+         "recipeId":"3",
+         "recipeName":"Black Russian",
+         "recipeNameForLink":"black+russian",
+         "instructions":"Pour the ingredients into the glass filled with ice cubes. Stir gently.",
+         "recipeHistory":"The Black Russian first appeared in 1949, thanks to the Belgian barman Gustave Tops, who created it at the Hotel Metropole in Brussels in the honor of Perle Mesta, then ambassador of the US in Luxembourg. The cocktail owes its name to the dark periods of the Cold War against the Soviet Union and is considered the ancestor of coffee cocktails.",
+         "alcoholLevel":"36.14"
+      }
+   ]
+}

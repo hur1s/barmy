@@ -12,7 +12,7 @@ var path       = require('path');
 var url = require("url");
 
 var fs = require('fs');
-var drinksRecipes = JSON.parse(fs.readFileSync('barmano_recipes.json', 'utf8'));
+var drinksRecipes = JSON.parse(fs.readFileSync('recipes.json', 'utf8'));
 
 // configure app to use bodyParser()
 // this will let us get the data from a POST
@@ -90,4 +90,4 @@ app.get('/*', function(request, response) {
 // START THE SERVER
 // =============================================================================
 app.listen(port);
-console.log('Barmano Api running on port ' + port);
+console.log('Bar Api running on port ' + port);

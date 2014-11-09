@@ -7,4 +7,10 @@ app/public/resources/recipe-images/.svn/entries
 
 app/public/resources/recipe-images/.svn/all-wcprops
 
+app/public/resources/recipe-images/
+
 *.map
+
+app/recipes_master.json
+
+app/db_master.json
