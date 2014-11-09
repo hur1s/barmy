@@ -1,0 +1,20 @@
+html, body, .wrap {
+	height: 100%;
+}		
+.container {
+	min-height: 100%;
+	padding-bottom:50px;
+	position:relative;
+}
+.container .page-footer {
+	position:absolute;
+	bottom:0;
+	height:50px;
+}
+
+.recipeImage {
+	width:300px;
+}
+.recipeImage img {
+	max-width:100%;
+}
