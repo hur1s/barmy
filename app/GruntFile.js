@@ -17,8 +17,23 @@ module.exports = function(grunt) {
         }
       }
     },
+    sass: {
+      dist: {
+        options: {
+          sourcemap: 'none',
+          style: 'nested'
+        },
+        files: [{
+          expand: true,
+          cwd: '<%= config.paths.src.sass %>',
+          src: ['*.scss'],
+          dest: '<%= config.paths.build.css %>',
+          ext: '.css'
+        }]
+      }
+    },
     watch: {
-      files: ['<%= config.paths.src.js %>*.js'],
+      files: ['<%= config.paths.src.js %>*.js', '<%= config.paths.src.sass %>*.scss'],
       tasks: ['build'],
     }
   });
@@ -26,9 +41,10 @@ module.exports = function(grunt) {
   // Load the plugins.
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
   // Default task(s).
-  grunt.registerTask('build', ['uglify']);
+  grunt.registerTask('build', ['sass','uglify']);
   grunt.registerTask('default', ['build', 'watch']);
 
 };

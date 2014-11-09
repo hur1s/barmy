@@ -1,10 +1,12 @@
 {
 	"paths": {
 		"src": {
-			"js": "public/src/javascript/"
+			"js": "public/src/javascript/",
+			"sass": "public/src/sass/"
 		},
 		"build": {
-			"js": "public/build/javascript/"
+			"js": "public/build/javascript/",
+			"css": "public/build/styles/"
 		}
 	}
 }
